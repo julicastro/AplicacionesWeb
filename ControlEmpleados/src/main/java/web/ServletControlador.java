@@ -43,7 +43,7 @@ public class ServletControlador extends HttpServlet {
         //request.getRequestDispatcher("clientes.jsp").forward(request, response);
         response.sendRedirect("empleados.jsp");
     }
-
+    
     private double calcularSalarioPromedio(List<Empleado> empleados){
         double salarioTotal = 0;
         for(Empleado empleado : empleados) {

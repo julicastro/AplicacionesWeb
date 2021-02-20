@@ -39,6 +39,7 @@ public class ServletControlador extends HttpServlet {
         sesion.setAttribute("clientes", clientes);
         sesion.setAttribute("totalClientes", clientes.size());
         sesion.setAttribute("saldoTotal", this.calcularSaldoTotal(clientes));
+        sesion.setAttribute("saldoPromedio", this.calcularSaldoPromedio(clientes));
         //request.getRequestDispatcher("clientes.jsp").forward(request, response);
         response.sendRedirect("clientes.jsp");
     }
@@ -51,6 +52,15 @@ public class ServletControlador extends HttpServlet {
         return saldoTotal;
     }
 
+    private double calcularSaldoPromedio(List<Cliente> clientes) {
+        double saldoTotal = 0;
+        for (Cliente cliente : clientes) {
+            saldoTotal += cliente.getSaldo();
+        }
+        return saldoTotal / clientes.size();
+    }
+
+    
     private void editarCliente(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //recuperamos el idCliente

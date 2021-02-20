@@ -4,7 +4,7 @@ import dominio.Empleado;
 import java.sql.*;
 import java.util.*;
 
-public class EmpleadoDaoJDBC {
+public class EmpleadoDaoJDBC implements IEmpleadoDaoJDBC{
 
     private static final String SQL_SELECT = "SELECT id_empleado, nombre, apellido, dni, telefono, salario "
             + " FROM empleado";

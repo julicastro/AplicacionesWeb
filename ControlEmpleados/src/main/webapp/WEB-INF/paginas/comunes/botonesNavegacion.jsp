@@ -7,10 +7,10 @@
                     <i class="fas fa-plus"></i> Agregar Empleado
                 </a>
             </div>
-            <div class="col-md-3">
-                <div class="btn btn-secondary btn-block">
-                    <i class="fas fa-file-download"></i> Descargar Lista
-                </div>
+            <div class="col-md-3">            
+                <a href="#" class="btn btn-secondary btn-block">
+                    <i class="fas fa-file-download"></i> Descargar Lista 
+                </a>                           
             </div>
         </div>
     </div>

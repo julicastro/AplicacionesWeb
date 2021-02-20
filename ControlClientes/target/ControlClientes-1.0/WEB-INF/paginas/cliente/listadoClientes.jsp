@@ -49,21 +49,29 @@
                         </h4>
                     </div>
                 </div>
-
-                <div class="card text-center bg-success text-white mb-3">
-                    <div class="card-body">
-                        <h3>Total Clientes</h3>
-                        <h4 class="display-4">
-                            <i class="fas fa-users"></i> ${totalClientes}
-                        </h4>
+                
+                    <div class="card text-center bg-danger text-white mb-3">
+                        <div class="card-body">
+                            <h3>Saldo Promedio</h3>
+                            <h4 class="display-4">
+                                <fmt:formatNumber value="${saldoPromedio}" type="currency" />
+                            </h4>
+                        </div>
                     </div>
-                </div>        
+
+                    <div class="card text-center bg-success text-white mb-3">
+                        <div class="card-body">
+                            <h3>Total Clientes</h3>
+                            <h4 class="display-4">
+                                <i class="fas fa-users"></i> ${totalClientes}
+                            </h4>
+                        </div>
+                    </div>        
+                </div>
+                <!--Fin Tarjetas para los totales-->
             </div>
-            <!--Fin Tarjetas para los totales-->
         </div>
-    </div>
 </section>
 
 <!-- Agregar cliente MODAL -->
 <jsp:include page="/WEB-INF/paginas/cliente/agregarCliente.jsp"/>
-                        

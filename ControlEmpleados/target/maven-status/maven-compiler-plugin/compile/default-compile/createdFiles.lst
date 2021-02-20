@@ -2,3 +2,4 @@ datos\Conexion.class
 web\ServletControlador.class
 dominio\Empleado.class
 datos\EmpleadoDaoJDBC.class
+utilerias\Conversiones.class

@@ -4,7 +4,7 @@ import dominio.Cliente;
 import java.sql.*;
 import java.util.*;
 
-public class ClienteDaoJDBC {
+public class ClienteDaoJDBC implements IClienteDaoJDBC{
 
     private static final String SQL_SELECT = "SELECT id_cliente, nombre, apellido, email, telefono, saldo "
             + " FROM cliente";
